@@ -3,7 +3,6 @@
     font-size: 2em;
     color: #333;
     text-align: center;
-    font-weight: bold; /* Add bold weight for emphasis */
   }
 
   .description {
@@ -11,35 +10,48 @@
     padding: 1em;
   }
 
-  .content h3 {
-    font-size: 1.2em;
+  .content h2 {
+    font-size: 1.5em;
     margin-bottom: 0.5em;
+  }
+
+  .data-structure, .algorithm {
+    margin-bottom: 1em;
+  }
+
+  .data-structure code, .algorithm code {
+    font-family: monospace;
+    background-color: #f5f5f5;
+    padding: 0.5em 1em;
+    border-radius: 3px;
   }
 </style>
 
-## DATA Structures and Algorithms
+<h1 class="title">Data Structures and Algorithms in C</h1>
 
-This repository documents your journey through learning data structures and algorithms using the C programming language. It serves as a valuable resource for anyone interested in exploring these fundamental concepts and practicing their C skills.
+<p class="description">This repository documents my journey through learning data structures and algorithms using the C programming language. It serves as a valuable resource for anyone interested in exploring these fundamental concepts and practicing their C skills.</p>
 
-**Description:**
+<div class="content">
 
-*Learn the intricacies of data structures and algorithms, all implemented in C!* (Use italics for emphasis)
+  ## Data Structures
 
-**Content:**
+  Here's an overview of the data structures I've explored with code examples in C:
 
-<hr>  * ### Data Structures
-    * Explore various data structures like arrays, linked lists, stacks, queues, trees, heaps, and graphs.
-    * Gain a solid understanding of their functionalities through clear explanations and code examples.
-* ### Algorithms
-    * Delve into sorting, searching, recursion, dynamic programming, and graph algorithms.
-    * Master their implementation details and time/space complexity analysis.
+  **Arrays**
 
-**Additional Considerations:**
+  Arrays are a fundamental data structure that stores a fixed-size collection of elements of the same data type.
 
-* Consider adding badges (e.g., for difficulty level, language) using Markdown extensions for a more visual appeal.
-* Include links to helpful resources for further exploration.
+  ```c
+  #include <stdio.h>
 
-**Remember:**
+  int main() {
+    int numbers[5] = {10, 20, 30, 40, 50};
 
-This is just a starting point. Feel free to experiment with different formatting options and personalize your README to reflect your learning journey!
+    for (int i = 0; i < 5; i++) {
+      printf("%d ", numbers[i]);
+    }
+
+    return 0;
+  }
+
 
