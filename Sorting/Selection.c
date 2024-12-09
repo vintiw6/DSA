@@ -22,22 +22,3 @@ void selection(int arr[], int N)
         }
     }
 }
-int main()
-{
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int N = sizeof(arr) / sizeof(arr[0]);
-
-    printf("Unsorted Array: \n");
-    for (int i = 0; i < N; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    selection(arr, N);
-
-    printf("Sorted Array: \n");
-    for (int i = 0; i < N; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    return 0;
-}
